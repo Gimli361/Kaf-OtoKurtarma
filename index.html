@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Konya Kaf Şendallar 7/24 Oto Kurtarma | Konya Çekici ve Yol Yardım</title>
+<meta name="description" content="Konya Merkez, Selçuklu, Meram, Karatay ve tüm çevre ilçelerde 7/24 oto çekici ve yol yardım hizmeti. En uygun fiyat garantisiyle anında yanınızdayız." />
+<meta name="theme-color" content="#0c0a09" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Konya Kaf Şendallar 7/24 Oto Kurtarma | Konya Çekici" />
+<meta property="og:description" content="Konya ve çevre ilçelerde 7/24 çekici ve yol yardım. En uygun fiyat garantisi." />
+<meta property="og:type" content="website" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0c0a09',
+          charcoal: '#171412',
+          panel: '#221d19',
+          line: '#3a322c',
+          flame: {
+            DEFAULT: '#F97316',
+            bright: '#FB8B2E',
+            deep: '#EA580C',
+          },
+          wa: {
+            DEFAULT: '#25D366',
+            deep: '#1EBE5A',
+          },
+        },
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'Segoe UI', 'Roboto', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { -webkit-font-smoothing: antialiased; }
+
+  /* Pulsing emergency glow for the primary WhatsApp button */
+  @keyframes wa-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+    70%  { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+  .animate-wa-pulse { animation: wa-pulse 1.9s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+  /* Subtle blink for the "live / open now" dot */
+  @keyframes live-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%      { opacity: 0.35; transform: scale(0.82); }
+  }
+  .animate-live { animation: live-dot 1.6s ease-in-out infinite; }
+
+  /* Hazard stripe accent */
+  .hazard {
+    background-image: repeating-linear-gradient(
+      45deg,
+      #F97316 0px, #F97316 14px,
+      #171412 14px, #171412 28px
+    );
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-wa-pulse, .animate-live { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* Faint road-grid texture for hero */
+  .road-grid {
+    background-image:
+      radial-gradient(circle at 50% 0%, rgba(249,115,22,0.12), transparent 55%),
+      linear-gradient(rgba(58,50,44,0.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(58,50,44,0.4) 1px, transparent 1px);
+    background-size: 100% 100%, 46px 46px, 46px 46px;
+  }
+
+  /* Custom horizontal scrollbar for reviews */
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 5px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #171412;
+    border-radius: 9999px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #3a322c;
+    border-radius: 9999px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #F97316;
+  }
+
+  /* Reviews drag cursor style */
+  #reviews-container {
+    cursor: grab;
+  }
+  #reviews-container.active {
+    cursor: grabbing;
+    user-select: none;
+  }
+</style>
+</head>
+
+<body class="bg-ink text-white font-sans antialiased selection:bg-flame selection:text-ink">
+
+  <!-- ============ TOP HAZARD STRIP ============ -->
+  <div class="hazard h-1.5 w-full"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-40 bg-ink/90 backdrop-blur border-b border-line/60">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <a href="#top" class="flex items-center gap-2.5 min-w-0">
+        <span class="grid place-items-center h-9 w-9 rounded-lg bg-flame text-ink shrink-0">
+          <!-- shield/tow glyph -->
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/>
+          </svg>
+        </span>
+        <span class="font-extrabold tracking-tight text-[15px] sm:text-base leading-none truncate">
+          Konya Kaf Şendallar <span class="text-flame">7/24</span>
+        </span>
+      </a>
+
+      <div class="flex items-center gap-1.5 sm:gap-2">
+        <a href="tel:+905340672289"
+           class="flex items-center gap-1.5 rounded-lg border border-line bg-panel px-2.5 py-1.5 text-xs sm:text-sm font-semibold hover:border-flame hover:text-flame transition-colors">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1l-2.23 2.2z"/></svg>
+          <span class="hidden xs:inline sm:inline">0534 067 22 89</span>
+        </a>
+        <div class="flex items-center gap-1.5 rounded-lg border border-line bg-panel px-2.5 py-1.5 text-xs sm:text-sm font-semibold hover:border-flame hover:text-flame transition-colors">
+          <svg viewBox="0 0 512 512" class="h-4 w-4" fill="currentColor">
+            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+              <path d="M2364 4976 c-465 -89 -825 -433 -931 -891 -14 -62 -18 -119 -18 -250 1 -195 17 -279 84 -441 110 -262 344 -499 602 -610 259 -110 560 -124 818 -38 313 105 576 348 702 648 68 164 83 245 83 446 0 148 -3 189 -22 263 -106 421 -425 745 -840 854 -120 31 -363 41 -478 19z"/>
+              <path d="M2245 2419 c-554 -52 -1022 -230 -1370 -521 -245 -204 -403 -426 -463 -647 l-26 -96 0 -470 c-1 -446 0 -471 18 -498 41 -61 -118 -57 2156 -57 2274 0 2115 -4 2156 57 18 27 19 52 18 498 l0 470 -26 96 c-60 220 -219 443 -459 644 -362 302 -813 472 -1394 525 -128 12 -480 11 -610 -1z"/>
+            </g>
+          </svg>
+          <span class="hidden xs:inline sm:inline">Ahmet Şendal</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="relative road-grid overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-ink/40 to-ink"></div>
+
+    <div class="relative mx-auto max-w-6xl px-4 sm:px-6 pt-10 sm:pt-16 pb-12">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
+
+        <!-- Left: copy + CTAs -->
+        <div class="text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 rounded-full border border-flame/40 bg-flame/10 px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-flame-bright">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-live absolute inline-flex h-full w-full rounded-full bg-wa"></span>
+              <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-wa"></span>
+            </span>
+            Şu anda hizmetteyiz · Konya 7/24
+          </div>
+
+          <h1 class="mt-5 text-3xl sm:text-5xl lg:text-[3.25rem] font-900 font-extrabold leading-[1.05] tracking-tight text-balance">
+            Konya Çekici ve Yol Yardım
+            <span class="block text-flame mt-2">7/24 Hizmet</span>
+          </h1>
+
+          <p class="mt-5 text-base sm:text-lg text-white/70 max-w-xl mx-auto lg:mx-0 text-pretty">
+            Konya Merkez ve tüm çevre ilçelerde <span class="text-white font-semibold">en uygun fiyat garantisiyle</span> yanınızdayız! Yolda kaldıysanız tek tıkla konumunuzu gönderin, ekibimiz yola çıksın.
+          </p>
+
+          <!-- CTAs -->
+          <div class="mt-7 flex flex-col sm:flex-row gap-3 sm:items-center justify-center lg:justify-start">
+            <a href="https://wa.me/905340672289?text=Merhaba%2C%20yol%20yard%C4%B1ma%20ihtiyac%C4%B1m%20var."
+               target="_blank" rel="noopener"
+               class="animate-wa-pulse group inline-flex items-center justify-center gap-3 rounded-2xl bg-wa hover:bg-wa-deep px-6 py-4 text-base sm:text-lg font-bold text-ink shadow-lg shadow-wa/20 transition-colors">
+              <svg viewBox="0 0 32 32" class="h-7 w-7 shrink-0" fill="currentColor"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a9.6 9.6 0 0 1-1.5-5.2c0-5.4 4.4-9.7 9.8-9.7s9.8 4.4 9.8 9.8-4.4 9.8-9.6 9.8zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+              WhatsApp ile Konum Gönder
+            </a>
+
+            <a href="tel:+905340672289"
+               class="inline-flex items-center justify-center gap-2.5 rounded-2xl border-2 border-flame bg-flame/10 hover:bg-flame hover:text-ink px-6 py-4 text-base sm:text-lg font-bold text-flame-bright transition-colors">
+              <svg viewBox="0 0 24 24" class="h-6 w-6 shrink-0" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1l-2.23 2.2z"/></svg>
+              Hemen Ara
+            </a>
+          </div>
+
+          <p class="mt-4 text-sm text-white/45 flex items-center gap-2 justify-center lg:justify-start">
+            <svg viewBox="0 0 24 24" class="h-4 w-4 text-flame" fill="currentColor"><path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm-1.2 15-3.5-3.5 1.4-1.4 2.1 2.1 4.6-4.6 1.4 1.4-6 6z"/></svg>
+            7/24 Kesintisiz Hizmet · Şeffaf fiyat · Anında intikal
+          </p>
+        </div>
+
+        <!-- Right: SVG tow truck -->
+        <div class="relative">
+          <div class="relative rounded-3xl border border-line bg-charcoal/70 p-5 sm:p-7 shadow-2xl">
+            <div class="absolute -top-3 left-5 hazard h-1.5 w-24 rounded-full"></div>
+            <img src="image (1).png" alt="Tow Truck" class="mx-auto h-48 w-auto" />
+
+            <div class="mt-5 grid grid-cols-3 gap-2 text-center">
+              <div class="rounded-xl bg-panel/70 border border-line py-2.5">
+                <div class="text-flame font-extrabold text-lg leading-none">7/24</div>
+                <div class="text-[11px] text-white/55 mt-1">Kesintisiz</div>
+              </div>
+              <div class="rounded-xl bg-panel/70 border border-line py-2.5">
+                <div class="text-flame font-extrabold text-lg leading-none">~15 dk</div>
+                <div class="text-[11px] text-white/55 mt-1">Hızlı İntikal</div>
+              </div>
+              <div class="rounded-xl bg-panel/70 border border-line py-2.5">
+                <div class="text-flame font-extrabold text-lg leading-none">Tüm</div>
+                <div class="text-[11px] text-white/55 mt-1">İlçeler</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST INDICATORS ============ -->
+  <section class="border-y border-line/60 bg-charcoal">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-12 sm:py-16">
+      <h2 class="text-center text-2xl sm:text-3xl font-extrabold tracking-tight">Neden Konya Kaf Şendallar?</h2>
+      <p class="text-center text-white/55 mt-2 max-w-2xl mx-auto">Yolda kalmak stresli; çözümü stressiz olsun. Net sözler, hızlı aksiyon.</p>
+
+      <div class="mt-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- card -->
+        <div class="rounded-2xl border border-line bg-panel/60 p-5 hover:border-flame/50 transition-colors">
+          <div class="grid place-items-center h-12 w-12 rounded-xl bg-flame/12 text-flame mb-4">
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">7/24 Kesintisiz Hizmet</h3>
+          <p class="text-sm text-white/55 mt-1.5 text-pretty">Gece gündüz fark etmeksizin tek tıkla ulaşım. Bayram, hafta sonu, gece yarısı — biz buradayız.</p>
+        </div>
+
+        <div class="rounded-2xl border border-line bg-panel/60 p-5 hover:border-flame/50 transition-colors">
+          <div class="grid place-items-center h-12 w-12 rounded-xl bg-flame/12 text-flame mb-4">
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">En Uygun Fiyat</h3>
+          <p class="text-sm text-white/55 mt-1.5 text-pretty">Bütçe dostu, şeffaf fiyat politikası. Sürpriz yok; aramadan önce fiyatı netleştirin.</p>
+        </div>
+
+        <div class="rounded-2xl border border-line bg-panel/60 p-5 hover:border-flame/50 transition-colors">
+          <div class="grid place-items-center h-12 w-12 rounded-xl bg-flame/12 text-flame mb-4">
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Geniş Hizmet Ağı</h3>
+          <p class="text-sm text-white/55 mt-1.5 text-pretty">Konya Merkez, Selçuklu, Meram, Karatay ve tüm çevre ilçeler kapsama alanımızda.</p>
+        </div>
+
+        <div class="rounded-2xl border border-line bg-panel/60 p-5 hover:border-flame/50 transition-colors">
+          <div class="grid place-items-center h-12 w-12 rounded-xl bg-flame/12 text-flame mb-4">
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Hızlı İntikal</h3>
+          <p class="text-sm text-white/55 mt-1.5 text-pretty">Bildirdiğiniz konuma en kısa sürede ulaşım garantisi. Ekip en yakın noktadan yola çıkar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="hizmetler" class="bg-ink">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-14 sm:py-20">
+      <div class="flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <span class="text-flame font-bold text-sm tracking-widest uppercase">Hizmetlerimiz</span>
+          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold tracking-tight">Her Araç, Her Durum İçin Çözüm</h2>
+        </div>
+        <p class="text-white/55 max-w-sm text-sm">Binek araçtan,motorsiklete akü takviyesinden kazalı araç kurtarmaya kadar tek elden.</p>
+      </div>
+
+      <div class="mt-9 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- service -->
+        <div class="group relative overflow-hidden rounded-2xl border border-line bg-charcoal p-6 hover:border-flame/60 transition-colors">
+          <div class="absolute right-0 top-0 hazard h-1 w-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="flex items-start gap-4">
+            <div class="grid place-items-center h-14 w-14 rounded-2xl bg-flame text-ink shrink-0">
+              <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13h11v-3l4 1 3 3v3h-2"/><path d="M3 16h2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Oto Çekici &amp; Kurtarma</h3>
+              <p class="text-sm text-white/55 mt-1.5 text-pretty">Binek araçlarınız için güvenli. Arıza ya da kaza fark etmeksizin aracınızı dilediğiniz noktaya taşıyoruz.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl border border-line bg-charcoal p-6 hover:border-flame/60 transition-colors">
+          <div class="absolute right-0 top-0 hazard h-1 w-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="flex items-start gap-4">
+            <div class="grid place-items-center h-14 w-14 rounded-2xl bg-flame text-ink shrink-0">
+              <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="10" rx="1"/><path d="M15 9h4l3 3v4h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Güvenli Taşıma</h3>
+              <p class="text-sm text-white/55 mt-1.5 text-pretty">Profesyonel ekipman ve deneyimli personel ile araçlarınızı güvenli bir şekilde taşımak.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl border border-line bg-charcoal p-6 hover:border-flame/60 transition-colors">
+          <div class="absolute right-0 top-0 hazard h-1 w-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="flex items-start gap-4">
+            <div class="grid place-items-center h-14 w-14 rounded-2xl bg-flame text-ink shrink-0">
+              <svg viewBox="0 0 512 512" class="h-7 w-7" fill="currentColor">
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+                  <path d="M4137 5110 c-384 -65 -673 -367 -716 -748 -6 -55 -6 -116 0 -161 18 -146 109 -371 251 -619 121 -212 199 -333 395 -608 l93 -131 0 -106 c0 -104 1 -108 29 -139 25 -28 36 -33 76 -33 40 0 51 5 76 33 28 31 29 35 29 137 l0 105 78 108 c441 607 672 1069 672 1340 0 138 -60 324 -144 451 -53 80 -170 195 -249 245 -169 108 -400 157 -590 126z m213 -651 c60 -27 79 -45 106 -104 29 -60 30 -116 5 -170 -46 -99 -139 -146 -245 -123 -69 15 -139 85 -154 154 -38 174 130 315 288 243z"/>
+                  <path d="M1065 3395 c-280 -52 -506 -168 -695 -357 -294 -294 -425 -736 -345 -1158 74 -384 323 -851 713 -1335 97 -121 330 -381 414 -462 88 -85 100 -88 265 -78 116 7 118 8 151 41 31 31 34 39 29 75 -3 26 -16 52 -33 70 l-27 28 61 65 c143 153 375 447 498 631 474 707 579 1278 329 1791 -181 371 -512 615 -940 690 -98 17 -324 17 -420 -1z m365 -641 c175 -41 340 -172 419 -334 54 -110 75 -209 68 -320 -16 -246 -156 -449 -380 -550 -86 -38 -158 -53 -257 -53 -341 0 -615 259 -637 603 -7 111 14 210 68 320 78 160 243 293 414 334 80 19 224 19 305 0z"/>
+                  <path d="M4125 2318 c-11 -6 -43 -35 -70 -63 -58 -60 -120 -87 -253 -110 -74 -13 -91 -19 -114 -45 -31 -34 -36 -75 -14 -118 23 -44 55 -56 134 -49 182 15 334 87 424 200 58 74 50 145 -22 182 -34 18 -58 19 -85 3z"/>
+                  <path d="M3265 2045 c-105 -52 -224 -187 -301 -341 -44 -86 -46 -94 -34 -128 15 -47 53 -76 99 -76 53 0 73 19 128 117 46 84 120 169 226 259 30 26 37 38 37 69 0 90 -76 139 -155 100z"/>
+                  <path d="M2791 1253 c-18 -17 -45 -64 -66 -118 -20 -49 -66 -148 -101 -218 -72 -144 -78 -179 -39 -225 57 -68 130 -48 187 51 89 153 188 385 188 438 0 28 -7 45 -31 68 -41 42 -96 43 -138 4z"/>
+                  <path d="M2249 464 c-100 -67 -166 -101 -278 -144 -88 -34 -121 -67 -121 -120 0 -40 35 -88 72 -98 97 -26 493 177 533 273 29 67 -23 145 -96 145 -15 0 -62 -24 -110 -56z"/>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Şehirler Arası Taşıma</h3>
+              <p class="text-sm text-white/55 mt-1.5 text-pretty">Uzak mesafelerde araçlarınızı güvenli ve konforlu bir şekilde taşımak.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl border border-line bg-charcoal p-6 hover:border-flame/60 transition-colors">
+          <div class="absolute right-0 top-0 hazard h-1 w-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="flex items-start gap-4">
+            <div class="grid place-items-center h-14 w-14 rounded-2xl bg-flame text-ink shrink-0">
+              <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3 5 14h5l-1 7 9-11h-5l1-7z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Yol Yardım</h3>
+              <p class="text-sm text-white/55 mt-1.5 text-pretty">Akü takviyesi, lastik değişimi ve yakıt ikmali. Küçük arızalarda çekiciye gerek kalmadan yola devam edin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GOOGLE REVIEWS ============ -->
+  <section id="yorumlar" class="bg-ink border-t border-line/60">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-14 sm:py-20">
+
+      <!-- header + rating summary -->
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+        <div>
+          <span class="text-flame font-bold text-sm tracking-widest uppercase">Müşteri Yorumları</span>
+          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold tracking-tight">Yolda Kalanların Güvendiği Ekip</h2>
+        </div>
+
+        <div class="flex items-center gap-4 rounded-2xl border border-line bg-panel/60 px-5 py-4">
+          <!-- Google G -->
+          <svg viewBox="0 0 48 48" class="h-9 w-9 shrink-0" aria-hidden="true">
+            <path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/>
+            <path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/>
+            <path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/>
+            <path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/>
+          </svg>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-2xl font-extrabold leading-none">5.0</span>
+              <div class="flex text-flame" aria-label="5 üzerinden 5.0">
+                <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+                <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+                <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+                <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+                <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              </div>
+            </div>
+            <div class="text-xs text-white/50 mt-1">Google üzerinde 120+ değerlendirme</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- review cards horizontal scroll -->
+      <div id="reviews-container" class="mt-9 flex gap-5 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth custom-scrollbar">
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">M</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Mehmet A.</figcaption>
+                <div class="text-xs text-white/45">2 hafta önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">Gece 2'de Konya çevre yolunda kaldım, 15 dakikada geldiler. Aracıma çok özenli davrandılar, fiyat da konuştuğumuz gibiydi. Kesinlikle tavsiye ederim.</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">E</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Elif K.</figcaption>
+                <div class="text-xs text-white/45">1 ay önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">Meram'da aküm bitti, telefonda çok ilgili oldular. Akü takviyesi yapıp yola devam etmemi sağladılar. Güler yüzlü, profesyonel bir ekip.</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">H</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Hakan Y.</figcaption>
+                <div class="text-xs text-white/45">3 hafta önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg><svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">Ticari aracım Karatay'da arıza yaptı, ağır vasıta çekicisiyle geldiler. İşini bilen, dürüst insanlar. Şehir dışına taşımada da fiyatları gayet uygun.</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">M</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Muhammet Öner</figcaption>
+                <div class="text-xs text-white/45">3 gün önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">sağolsunlar çok ilgilendiler bide sigara ikram ettiler</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">M</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Muzaffer Keleş</figcaption>
+                <div class="text-xs text-white/45">3 gün önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">Gece 4 te geldiler temiz işçilik çıkardılar valla 4 tane yer aradım en uygunu burasıydı teşekkürler ilginize</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">A</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Ahmet emin Kozanlı</figcaption>
+                <div class="text-xs text-white/45">2 gün önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">Konyada tek</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">S</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">samett t</figcaption>
+                <div class="text-xs text-white/45">2 gün önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">Yolda Kaldık Gece Aradığımız Hiç Kimse Çıkıp Gelmedi Mesafemiz Uzak Olduğu İçin Kaan Kardeşim 45 Km Yolu Hiç Bekletmeden Geldi İlgi Ve Alakasından Dolayı Teşekkür Ederim Aradığınızda Saat Farketmeksizin Yardımıma Yetişecek Bir Esnaf Tekrardan Teşekkür Ederiz.</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">E</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Erhan demirci</figcaption>
+                <div class="text-xs text-white/45">3 gün önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">Kayseri'ye geldiğimde gece yolda kalmıştım aradım hemen geldiler çok güzel ilgilendiler termosta çay bile verdiler  ...</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">M</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Mahmut Sami</figcaption>
+                <div class="text-xs text-white/45">6 dakika önce düzenlendi</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">Çok memnun kaldık allah razı olsun</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">E</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Emre Acıbadem</figcaption>
+                <div class="text-xs text-white/45">bir gün önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">Herkese tavsiye ediyorum güvenilir arkadaşlar  7/24 yardımcı oluyorlar  ...</blockquote>
+          </div>
+        </figure>
+
+        <!-- card -->
+        <figure class="w-[85vw] sm:w-[350px] shrink-0 snap-start rounded-2xl border border-line bg-charcoal p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="grid place-items-center h-11 w-11 rounded-full bg-flame/15 text-flame font-bold text-lg shrink-0">C</span>
+              <div class="min-w-0">
+                <figcaption class="font-semibold leading-tight truncate">Can Yilmaz</figcaption>
+                <div class="text-xs text-white/45">2 gün önce</div>
+              </div>
+              <svg viewBox="0 0 48 48" class="h-5 w-5 ml-auto shrink-0" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+            </div>
+            <div class="flex text-flame mt-3">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor"><path d="M10 1l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.1l1-5.8L1.5 7.2l5.9-.9z"/></svg>
+            </div>
+            <blockquote class="text-sm text-white/70 mt-3 text-pretty">En zor anımda, gecenin bir yarısı hızır gibi yetiştiler. Hem profesyonel hem de çok güler yüzlü bir hizmet sundular kaan kardeşime  cok teşekkür ediyorum</blockquote>
+          </div>
+        </figure>
+
+      </div>
+
+      <!-- leave a review CTA -->
+      <div class="mt-7 text-center">
+        <a href="https://maps.app.goo.gl/35bhbxV8fdek4wUw7"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2.5 rounded-xl border border-line bg-panel hover:border-flame hover:text-flame px-5 py-3 text-sm font-semibold transition-colors">
+          <svg viewBox="0 0 48 48" class="h-5 w-5" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.7-2 5-4.4 6.6v5.5h7.1c4.1-3.8 6.6-9.4 6.6-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17.1 2.2 20.4 2.2 24s.8 6.9 2.3 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg>
+          Google'da tüm yorumları gör
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COVERAGE AREA + MAP ============ -->
+  <section id="bolge" class="bg-charcoal border-t border-line/60">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-14 sm:py-20">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="text-flame font-bold text-sm tracking-widest uppercase">Hizmet Bölgelerimiz</span>
+          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold tracking-tight">Konya'nın Her Noktasında Yanınızdayız</h2>
+          <p class="mt-4 text-white/65 text-pretty">
+            <span class="text-white font-semibold">Selçuklu, Meram, Karatay</span> başta olmak üzere Konya'nın tüm çevre ilçelerine ve şehirlerarası bağlantı yollarına anında hizmet sağlıyoruz.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="rounded-full border border-line bg-panel px-3.5 py-1.5 text-sm font-medium">Selçuklu</span>
+            <span class="rounded-full border border-line bg-panel px-3.5 py-1.5 text-sm font-medium">Meram</span>
+            <span class="rounded-full border border-line bg-panel px-3.5 py-1.5 text-sm font-medium">Karatay</span>
+            <span class="rounded-full border border-line bg-panel px-3.5 py-1.5 text-sm font-medium">Ereğli</span>
+            <span class="rounded-full border border-line bg-panel px-3.5 py-1.5 text-sm font-medium">Akşehir</span>
+            <span class="rounded-full border border-line bg-panel px-3.5 py-1.5 text-sm font-medium">Beyşehir</span>
+            <span class="rounded-full border border-line bg-panel px-3.5 py-1.5 text-sm font-medium">Çumra</span>
+            <span class="rounded-full border border-flame/50 bg-flame/10 text-flame-bright px-3.5 py-1.5 text-sm font-semibold">+ Tüm Çevre İlçeler</span>
+          </div>
+
+          <div class="mt-7 flex items-center gap-3 rounded-2xl border border-line bg-panel/60 p-4">
+            <div class="grid place-items-center h-11 w-11 rounded-xl bg-flame/12 text-flame shrink-0">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9V20a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3.1a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+            </div>
+            <div>
+              <div class="text-xs text-white/50">Şehirlerarası bağlantı yolları dahil</div>
+              <a href="tel:+905340672289" class="text-lg font-extrabold text-flame-bright hover:text-flame">0534 067 22 89</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative rounded-2xl overflow-hidden border border-line shadow-2xl">
+          <div class="absolute top-0 left-0 hazard h-1.5 w-full z-10"></div>
+          <iframe
+            title="Konya Kaf Şendallar Konya Hizmet Bölgesi Haritası"
+            src="https://www.google.com/maps?q=Konya%2C+T%C3%BCrkiye&z=10&output=embed"
+            class="w-full h-[320px] sm:h-[400px] block"
+            style="border:0; filter: grayscale(0.25) contrast(1.05);"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="relative overflow-hidden bg-ink">
+    <div class="absolute inset-0 road-grid opacity-60"></div>
+    <div class="relative mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 text-center">
+      <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-balance">Yolda mı kaldınız? Bir mesaj uzağınızdayız.</h2>
+      <p class="mt-4 text-white/65 max-w-xl mx-auto">Konumunuzu WhatsApp'tan gönderin, en yakın ekibimiz hemen yola çıksın. 7/24, kesintisiz.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://wa.me/905340672289?text=Merhaba%2C%20yol%20yard%C4%B1ma%20ihtiyac%C4%B1m%20var."
+           target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center gap-3 rounded-2xl bg-wa hover:bg-wa-deep px-7 py-4 text-lg font-bold text-ink shadow-lg shadow-wa/20 transition-colors">
+          <svg viewBox="0 0 32 32" class="h-7 w-7" fill="currentColor"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a9.6 9.6 0 0 1-1.5-5.2c0-5.4 4.4-9.7 9.8-9.7s9.8 4.4 9.8 9.8-4.4 9.8-9.6 9.8zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          WhatsApp ile Konum Gönder
+        </a>
+        <a href="tel:+905340672289"
+           class="inline-flex items-center justify-center gap-2.5 rounded-2xl border-2 border-flame bg-flame/10 hover:bg-flame hover:text-ink px-7 py-4 text-lg font-bold text-flame-bright transition-colors">
+          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1l-2.23 2.2z"/></svg>
+          0534 067 22 89
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-charcoal border-t border-line/60">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-10 pb-28 lg:pb-10">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <div class="flex items-center gap-2.5">
+          <span class="grid place-items-center h-9 w-9 rounded-lg bg-flame text-ink shrink-0">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/></svg>
+          </span>
+          <div>
+            <div class="font-extrabold leading-none">Konya Kaf Şendallar <span class="text-flame">7/24</span></div>
+            <div class="text-xs text-white/45 mt-1">Konya Oto Kurtarma &amp; Yol Yardım</div>
+          </div>
+        </div>
+        <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/60">
+          <a href="#hizmetler" class="hover:text-flame transition-colors">Hizmetler</a>
+          <a href="#yorumlar" class="hover:text-flame transition-colors">Yorumlar</a>
+          <a href="#bolge" class="hover:text-flame transition-colors">Hizmet Bölgeleri</a>
+          <a href="tel:+905340672289" class="hover:text-flame transition-colors">0534 067 22 89</a>
+        </nav>
+      </div>
+      <div class="mt-8 pt-6 border-t border-line/60 text-xs text-white/40 flex flex-col sm:flex-row justify-between gap-2">
+        <span>© 2026 Konya Kaf Şendallar 7/24 Oto Kurtarma. Tüm hakları saklıdır.</span>
+        <span>Selçuklu · Meram · Karatay · Tüm Konya</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ MOBILE STICKY FOOTER (mobile only) ============ -->
+  <div class="lg:hidden fixed bottom-0 inset-x-0 z-50">
+    <div class="hazard h-1 w-full"></div>
+    <div class="bg-ink/95 backdrop-blur border-t border-line px-3 py-3 flex gap-2.5">
+      <a href="https://wa.me/905340672289?text=Merhaba%2C%20yol%20yard%C4%B1ma%20ihtiyac%C4%B1m%20var."
+         target="_blank" rel="noopener"
+         class="animate-wa-pulse flex-1 inline-flex items-center justify-center gap-2.5 rounded-xl bg-wa active:bg-wa-deep px-4 py-3.5 text-base font-extrabold text-ink">
+        <svg viewBox="0 0 32 32" class="h-6 w-6 shrink-0" fill="currentColor"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a9.6 9.6 0 0 1-1.5-5.2c0-5.4 4.4-9.7 9.8-9.7s9.8 4.4 9.8 9.8-4.4 9.8-9.6 9.8zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        7/24 WhatsApp Yol Yardım
+      </a>
+      <a href="tel:+905340672289"
+         aria-label="Hemen Ara"
+         class="grid place-items-center rounded-xl border-2 border-flame bg-flame/10 active:bg-flame active:text-ink text-flame-bright w-14 shrink-0">
+        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1l-2.23 2.2z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slider = document.getElementById('reviews-container');
+      if (!slider) return;
+
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      let autoplayInterval;
+      const autoplayDelay = 4000; // 4 saniyede bir otomatik aksın
+
+      // Basılı tutarak kaydırma (Mouse Drag to Scroll)
+      slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        slider.classList.remove('scroll-smooth');
+        slider.style.scrollSnapType = 'none'; // Kaydırma esnasında snap'i devre dışı bırak
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        stopAutoplay();
+      });
+
+      slider.addEventListener('mouseleave', () => {
+        if (isDown) {
+          isDown = false;
+          slider.classList.remove('active');
+          slider.style.scrollSnapType = ''; // Snap'i geri getir
+          startAutoplay();
+        }
+      });
+
+      slider.addEventListener('mouseup', () => {
+        if (isDown) {
+          isDown = false;
+          slider.classList.remove('active');
+          slider.style.scrollSnapType = ''; // Snap'i geri getir
+          startAutoplay();
+        }
+      });
+
+      slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1.5; // Kaydırma hassasiyeti
+        slider.scrollLeft = scrollLeft - walk;
+      });
+
+      // Otomatik Kayma (Autoplay) Kontrolleri
+      slider.addEventListener('mouseenter', stopAutoplay);
+      slider.addEventListener('mouseleave', () => {
+        if (!isDown) startAutoplay();
+      });
+
+      slider.addEventListener('touchstart', stopAutoplay);
+      slider.addEventListener('touchend', startAutoplay);
+
+      function startAutoplay() {
+        stopAutoplay();
+        autoplayInterval = setInterval(() => {
+          const firstCard = slider.querySelector('figure');
+          if (!firstCard) return;
+          
+          slider.classList.add('scroll-smooth');
+          slider.style.scrollSnapType = ''; // Animasyonun snap ile bitmesini sağla
+          const cardWidth = firstCard.offsetWidth + 20; // Kart genişliği + gap (boşluk)
+          const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+          if (slider.scrollLeft >= maxScroll - 15) {
+            slider.scrollLeft = 0;
+          } else {
+            slider.scrollLeft += cardWidth;
+          }
+        }, autoplayDelay);
+      }
+
+      function stopAutoplay() {
+        if (autoplayInterval) {
+          clearInterval(autoplayInterval);
+        }
+      }
+
+      // Otomatik akışı başlat
+      startAutoplay();
+    });
+  </script>
+</body>
+</html>
